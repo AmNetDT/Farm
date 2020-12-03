@@ -1,0 +1,9 @@
+Schedule 
++++++++++++++++++++++++++++++++++++++++++++
+Make use of Scheduler Tutorials
+1. https://devexpress.github.io/devextreme-reactive/react/scheduler/demos/featured/appearance-customization/
+2. https://www.youtube.com/watch?v=iNkryf_TtZw&list=PLDzXQPWT8wEBcA9SvNAYDr4IBWsHgo-FO&index=1
+3. https://code.daypilot.org/tutorials/react
+
+NPM - @syncfusion/ej2-react-schedule
+https://www.npmjs.com/package/@syncfusion/ej2-react-schedule
