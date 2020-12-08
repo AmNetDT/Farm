@@ -1,9 +1,13 @@
 import React from 'react';
-import { Nav, INavLinkGroup, INavStyles } from 'office-ui-fabric-react/lib/Nav';
+import SubMenu from '../core/SubMenu';
+import 'office-ui-fabric-react/lib/Nav';
+import { Container, Col, Row } from 'react-bootstrap';
+import CommandBar from '../core/CommandBar';
 import { withRouter } from 'react-router-dom';
 
 
-const navLinkGroupsSub: INavLinkGroup = [
+
+const navLinkGroupsSub = [
     {
         links: [
             {
@@ -37,45 +41,21 @@ const navLinkGroupsSub: INavLinkGroup = [
         ],
     },
 ];
-const navStylesSub: Partial<INavStyles> = {
-    root: {
-        height: 650,
-        boxSizing: 'border-box',
-        overflowY: 'auto',
-        background: '#edebe9',
-        marginTop: 0,
-        marginLeft: 0,
-        marginRight: 0,
-    },
-};
 
-const SubMenu = () => {
-    return (
-        <Nav
-            styles={navStylesSub}
-            ariaLabel="Nav example with nested links"
-            groups={navLinkGroupsSub} />
-    );
-};
-
-export const Crops = () => {
+const Crops = () => {
     return (
         <div className="ms-Grid" Style="margin-left:-25px">
             <div className="ms-Grid-row">
-                <div className="ms-Grid-col ms-sm6 ms-md4 ms-lg2">
-                    <div className="LayoutPage-demoBlock">
-                        {SubMenu()}
+                    <div className="ms-Grid-col ms-sm6 ms-md4 ms-lg2">
+                         <SubMenu groupSub={ navLinkGroupsSub } />
                     </div>
-                </div>
-                <div className="ms-Grid-col ms-sm6 ms-md8 ms-lg10" >
-                    <div className="LayoutPage-demoBlock p-4">
-                        <div className="row">
-                            <div className="container">
-                                <button className="btn btn-primary">New Activity</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <Container>
+                        <Row>
+                            <Col className="mt-3">
+                                <CommandBar />
+                            </Col>
+                        </Row>
+                    </Container>
             </div>
         </div>
     )

@@ -1,19 +1,16 @@
 import * as React from 'react';
-import 'office-ui-fabric-react/dist/css/fabric.css';
-import { CommandBar, ICommandBarItemProps } from 'office-ui-fabric-react/lib/CommandBar';
-import { IButtonProps } from 'office-ui-fabric-react/lib/Button';
+import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
 import { initializeIcons } from '@uifabric/icons';
+import { withRouter } from 'react-router-dom';
 
-const overflowProps: IButtonProps = { ariaLabel: 'More commands' };
 
-export const CommandBarBasicExample: React.FunctionComponent = () => {
+export const CommandBarBasicExample = () => {
     initializeIcons();
     return (
         <div>
             <CommandBar
                 items={_items}
                 overflowItems={_overflowItems}
-                overflowButtonProps={overflowProps}
                 farItems={_farItems}
                 ariaLabel="Use left and right arrow keys to navigate between commands"
                
@@ -23,7 +20,7 @@ export const CommandBarBasicExample: React.FunctionComponent = () => {
 };
 
 
-const _items: ICommandBarItemProps[] = [
+const _items = [
     {
         key: 'newItem',
         text: 'New',
@@ -86,13 +83,13 @@ const _items: ICommandBarItemProps[] = [
     },
 ];
 
-const _overflowItems: ICommandBarItemProps[] = [
+const _overflowItems = [
     { key: 'move', text: 'Move to...', onClick: () => console.log('Move to'), iconProps: { iconName: 'MoveToFolder' } },
     { key: 'copy', text: 'Copy to...', onClick: () => console.log('Copy to'), iconProps: { iconName: 'Copy' } },
     { key: 'rename', text: 'Rename...', onClick: () => console.log('Rename'), iconProps: { iconName: 'Edit' } },
 ];
 
-const _farItems: ICommandBarItemProps[] = [
+const _farItems = [
     {
         key: 'tile',
         text: 'Grid view',
@@ -113,4 +110,4 @@ const _farItems: ICommandBarItemProps[] = [
     },
 ];
 
-export default CommandBarBasicExample;
+export default withRouter(CommandBarBasicExample);
