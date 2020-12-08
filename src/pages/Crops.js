@@ -1,9 +1,9 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import SubMenu from '../core/SubMenu';
 import 'office-ui-fabric-react/lib/Nav';
 import { Container, Col, Row } from 'react-bootstrap';
 import CommandBar from '../core/CommandBar';
-import { withRouter } from 'react-router-dom';
 
 
 

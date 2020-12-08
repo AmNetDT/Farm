@@ -1,11 +1,9 @@
-import React from 'react'
-import { Nav } from 'office-ui-fabric-react/lib/Nav';
+import * as React from 'react'
 import { withRouter } from 'react-router-dom';
+import { Nav } from 'office-ui-fabric-react/lib/Nav';
 
 
-
-
-const navStylesSub /*: Partial<INavStyles> */= {
+const navStylesSub = {
     root: {
         height: 650,
         boxSizing: 'border-box',

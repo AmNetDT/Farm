@@ -1,7 +1,7 @@
 import * as React from 'react';
+import { withRouter } from 'react-router-dom';
 import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
 import { initializeIcons } from '@uifabric/icons';
-import { withRouter } from 'react-router-dom';
 
 
 export const CommandBarBasicExample = () => {
