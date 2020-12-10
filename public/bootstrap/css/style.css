@@ -2616,8 +2616,7 @@ button {
 */
 
 .sidebar {
-  width: 18rem;
-  background: #fff;
+  background: #f8f9fa;
 }
 
 .sidebar.shrink {
