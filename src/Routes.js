@@ -1,51 +1,52 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Accounting from './pages/Accounting';
-import Contacts from './pages/Contacts';
-import Crops from './pages/Crops';
-import Equipment from './pages/Equipment';
-import Farm_map from './pages/Farm_map';
-import Livestock from './pages/Livestock';
-import Market from './pages/Market';
-import Reports from './pages/Reports';
-import Schedule from './pages/Schedule';
-import Tasks from './pages/Tasks';
-import Heading from './core/Heading';
+import Accounting from './core/Accounting';
+import Contacts from './core/Contacts';
+import Equipment from './core/Equipment';
+import Farm_map from './core/Farm_map';
+import Livestock from './core/Livestock';
+import Crops from './core/Crops';
+import Market from './core/Market';
+import Reports from './core/Reports';
+import Schedule from './core/Schedule';
+import Tasks from './core/Tasks';
+import Heading from './core/links/Heading';
 import Login from './privacy/Login';
-import Menu from './core/Menu';
+import Menu from './core/links/Menu';
+import Inventory from './core/Inventory';
 
 
 const Routes = () => {
     
     return(
+        
         <BrowserRouter>
             <Heading />
-            <div className="section bg-white" dir="ltr">
-                <div className="row bg-light p-0 m-0">
-                    <div className="col-md-2">
-                        <Menu />
-                    </div>
-
-
-                
-                <div className="col-md-10 bg-white">
+            <div className="section" dir="ltr">
+                <div className="row m-1 bg-white">
+                    <Menu />
+                    
+                   
                     <Switch>
-                            <Route path='/' exact component={Login} />
-                            <Route path='/Accounting/' exact component={Accounting} />
-                            <Route path='/Contacts/' exact component={Contacts} />
-                            <Route path='/Crops/' exact component={Crops} />
-                            <Route path='/Equipment/' exact component={Equipment} />
-                            <Route path='/Farm_map/' exact component={Farm_map} />
-                            <Route path='/Livestock/' exact component={Livestock} />
-                            <Route path='/Market/' exact component={Market} />
-                            <Route path='/Reports/' exact component={Reports} />
-                            <Route path='/Schedule/' exact component={Schedule} />
-                            <Route path='/Tasks/' exact component={Tasks} />
-
-                        </Switch>
-                    </div>
+                        <Route path='/' exact component={Login} />
+                        <Route path='/Accounting' exact component={Accounting} />
+                        <Route path='/Contacts' exact component={Contacts} />
+                        <Route path='/Equipment' exact component={Equipment} />
+                        <Route path='/Farm_map' exact component={Farm_map} />
+                        <Route path='/Livestock' exact component={Livestock} />
+                        <Route path='/Crops' exact component={Crops} />
+                        <Route path='/Market' exact component={Market} />
+                        <Route path='/Reports' exact component={Reports} />
+                        <Route path='/Schedule' exact component={Schedule} />
+                        <Route path='/Tasks' exact component={Tasks} />
+                        <Route path='/Inventory' exact component={Inventory} />
+                    </Switch>
             </div>            
         </div>
+
+            <footer className="pt-2 text-center">
+                <p>Copyright &copy; 2020</p>
+            </footer>
         </BrowserRouter>
         
     )
