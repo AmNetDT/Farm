@@ -11,3 +11,14 @@ https://www.npmjs.com/package/@syncfusion/ej2-react-schedule
 
 
 http://AmNetDT.github.io/farm.git
+
+
+ 
+const subnavColor = {
+    root: {
+        height: '100vh',
+        backgroundColor: '#edebe9',
+        overflowY: 'auto',
+        paddingTop: '10vh'
+    }
+}
