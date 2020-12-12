@@ -8,6 +8,10 @@ Make use of Scheduler Tutorials
 NPM - @syncfusion/ej2-react-schedule
 https://www.npmjs.com/package/@syncfusion/ej2-react-schedule
 
+Router Tutorial
++++++++++++++++++++++
+https://flaviocopes.com/react-router/
+
 
 
 http://AmNetDT.github.io/farm.git
