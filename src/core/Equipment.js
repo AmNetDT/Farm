@@ -1,9 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 
-
-const Equipment = () => {
+export const Equipment = () => {
     return (
-        <h3>Hello Equipment</h3>
+        <h3>Schedule</h3>
     )
 }
 

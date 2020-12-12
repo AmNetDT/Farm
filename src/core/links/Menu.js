@@ -8,6 +8,11 @@ const isActive = (history, path) =>{
                   color: '#333333'
             }
        
+      }else{
+            return {
+                  backgroundColor: '#f8f9fa',
+                  color: '#333333'
+            }
       }
 }
 
@@ -43,37 +48,37 @@ const Menu = ({ history }) =>{
                                     </Link>
                               </li>
                               <li className="sidebar-list-item">
-                                    <Link to="/Equipment" className="sidebar-link text-muted">
+                                    <Link to="/Equipment" style={isActive(history, '/Equipment')} className="sidebar-link text-muted">
                                           <span className="icon-toys text-primary"></span>
                                           <span className="text-xs text-dark">&nbsp;Equipment</span>
                                     </Link>
                               </li>
                               <li className="sidebar-list-item">
-                                    <Link to="/Accounting" className="sidebar-link text-muted">
+                                    <Link to="/Accounting" style={isActive(history, '/Accounting')} className="sidebar-link text-muted">
                                           <span className="icon-calculator text-primary"></span>
                                           <span className="text-xs text-dark">&nbsp;Accounting</span>
                                     </Link>
                               </li>
                               <li className="sidebar-list-item">
-                                    <Link to="/Market" className="sidebar-link text-muted">
+                                    <Link to="/Market" style={isActive(history, '/Market')} className="sidebar-link text-muted">
                                           <span className="icon-institution text-primary"></span>
                                           <span className="text-xs text-dark">&nbsp;Market</span>
                                     </Link>
                               </li>
                               <li className="sidebar-list-item">
-                                    <Link to="/Contacts" className="sidebar-link text-muted">
+                                    <Link to="/Contacts" style={isActive(history, '/Contacts')} className="sidebar-link text-muted">
                                           <span className="icon-contact_phone text-primary"></span>
                                           <span className="text-xs text-dark">&nbsp;Contact</span>
                                     </Link>
                               </li>
                               <li className="sidebar-list-item">
-                                    <Link to="/Farm_map" className="sidebar-link text-muted">
+                                    <Link to="/Farm_map" style={isActive(history, '/Farm_map')} className="sidebar-link text-muted">
                                           <span className="icon-map-marker text-primary"></span>
                                           <span className="text-xs text-dark">&nbsp;Farm Map</span>
                                     </Link>
                               </li>
                               <li className="sidebar-list-item">
-                                    <Link to="/Reports" className="sidebar-link text-muted">
+                                    <Link to="/Reports" style={isActive(history, '/Reports')} className="sidebar-link text-muted">
                                           <span className="icon-pie-chart text-primary"></span>
                                           <span className="text-xs text-dark">&nbsp;Reports</span>
                                     </Link>

@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import LivestockMenu from './links/LivestockMenu';
 import Animals from './Livestocks/Animals';
 import Grazing from './Livestocks/Grazing';
 import Groups from './Livestocks/Groups';
-
+import Inventory from './Livestocks/Inventory';
 
 const Livestock = () => {
     return (
@@ -14,9 +14,10 @@ const Livestock = () => {
                     <LivestockMenu />
 
                     <Switch>
-                        <Route path='/Animals' exact component={ Animals } />
-                        <Route path='/Grazing' exact component={ Grazing } />
-                        <Route path='/Groups' exact component={ Groups } />
+                        <Route exact path='/Animals' component={ Animals } />
+                        <Route path='/Grazing' component={Grazing} />
+                        <Route path='/Groups' component={Groups} />
+                        <Route path='/Inventory' component={Inventory} />
                     </Switch>
 
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Accounting from './core/Accounting';
 import Contacts from './core/Contacts';
 import Equipment from './core/Equipment';
@@ -13,7 +13,8 @@ import Tasks from './core/Tasks';
 import Heading from './core/links/Heading';
 import Login from './privacy/Login';
 import Menu from './core/links/Menu';
-import Inventory from './core/Inventory';
+import Inventory from './core/Livestocks/Inventory';
+import NotFound from './core/NotFound';
 
 
 const Routes = () => {
@@ -28,18 +29,20 @@ const Routes = () => {
                     
                    
                     <Switch>
-                        <Route path='/' exact component={Login} />
-                        <Route path='/Accounting' exact component={Accounting} />
-                        <Route path='/Contacts' exact component={Contacts} />
-                        <Route path='/Equipment' exact component={Equipment} />
-                        <Route path='/Farm_map' exact component={Farm_map} />
-                        <Route path='/Livestock' exact component={Livestock} />
-                        <Route path='/Crops' exact component={Crops} />
-                        <Route path='/Market' exact component={Market} />
-                        <Route path='/Reports' exact component={Reports} />
-                        <Route path='/Schedule' exact component={Schedule} />
-                        <Route path='/Tasks' exact component={Tasks} />
-                        <Route path='/Inventory' exact component={Inventory} />
+                        <Route exact path='/' component={ Login } />
+                        <Route path='/Accounting' component={ Accounting } />
+                        <Route path='/Contacts' component={Contacts} />
+                        <Route path='/Equipment' component={ Equipment } />
+                        <Route path='/Farm_map' component={Farm_map} />
+                        <Route path='/Livestock' component={Livestock} />
+                        <Route path='/Crops' component={Crops} />
+                        <Route path='/Market' component={Market} />
+                        <Route path='/Reports' component={Reports} />
+                        <Route path='/Schedule' component={Schedule} />
+                        <Route path='/Tasks' component={Tasks} />
+                        <Route path='/Inventory' component={Inventory} />
+                        <Route path='/404' component={ NotFound } />
+                        <Redirect to="/404" />
                     </Switch>
             </div>            
         </div>

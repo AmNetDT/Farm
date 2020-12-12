@@ -23,7 +23,7 @@ const LivestockMenu = ({ history }) => {
         
         <div className="align-items-stretch">
             <div id="sidebar" className="sidebar pt-5 m-0"
-                Style="background-color:#edebe9; height:85vh; width:25vh">
+                style={{ backgroundColor: '#edebe9', height:'85vh', width: '25vh', color: '#000000'}}>
 
                 <ul className="sidebar-menu list-unstyled">
                     <li className="sidebar-list-item">
