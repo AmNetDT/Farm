@@ -13,16 +13,24 @@ Router Tutorial
 https://flaviocopes.com/react-router/
 
 
-
 http://AmNetDT.github.io/farm.git
 
 
- 
-const subnavColor = {
-    root: {
-        height: '100vh',
-        backgroundColor: '#edebe9',
-        overflowY: 'auto',
-        paddingTop: '10vh'
-    }
-}
+++++++++++++++++++++++++++++++++++++++++++
+I will need to Configuring webpack.config.js file. The following link is the source
+https://jaxenter.com/build-reactjs-history-api-fallback-153122.html
+
++++++++++++++++++++++++++++++++++++++++++
+For the Toggle Switch
+*****************************************
+follow this link
+https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
+
+
+---------------------------------------------
+<li className="sidebar-list-item">
+                              <Link to="/Contacts" style={isActive(history, '/Contacts')} className="sidebar-link text-muted">
+                                    <span className="icon-contact_phone text-primary"></span>
+                                    <span className="text-xs text-dark">&nbsp;Contact</span>
+                              </Link>
+                        </li>
