@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-export const Project = () => {
+export const Manufacturing = () => {
     return (
         <div className="container m-3">
             <div className="row">
@@ -24,4 +24,4 @@ export const Project = () => {
 
 
 
-export default Project
+export default Manufacturing

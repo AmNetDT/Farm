@@ -2,14 +2,14 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Finance from './core/Finance';
 import Contacts from './core/Contacts';
-import Equipment from './core/Equipment';
+import Equipment from './core/Inventory';
 import Farm_map from './core/Farm_map';
 import Livestock from './core/Livestock';
 import Crops from './core/Crops';
 import Market from './core/Market';
 import Reports from './core/Reports';
 import Schedule from './core/Schedule';
-import Project from './core/Project';
+import Project from './core/Task';
 import Heading from './core/links/Heading';
 import Login from './privacy/Login';
 import Menu from './core/links/Menu';
