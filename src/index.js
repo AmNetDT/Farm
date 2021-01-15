@@ -1,6 +1,5 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import 'office-ui-fabric-react/dist/css/fabric.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import Routes from './Routes';
 
 

@@ -1,5 +1,4 @@
-import * as React from 'react'
-import CommandBar from '../links/CommandBar';
+import React from 'react'
 import { Row, Col } from 'react-bootstrap';
 
 
@@ -10,7 +9,6 @@ const CropPlan = () => {
         <Col xs md lg={8}>
             <Row>
                 <Col>
-                    <CommandBar />
                 </Col>
             </Row>
         </Col>

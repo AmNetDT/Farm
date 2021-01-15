@@ -1,6 +1,6 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import Accounting from './core/Accounting';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import Finance from './core/Finance';
 import Contacts from './core/Contacts';
 import Equipment from './core/Equipment';
 import Farm_map from './core/Farm_map';
@@ -9,48 +9,50 @@ import Crops from './core/Crops';
 import Market from './core/Market';
 import Reports from './core/Reports';
 import Schedule from './core/Schedule';
-import Tasks from './core/Tasks';
+import Project from './core/Project';
 import Heading from './core/links/Heading';
 import Login from './privacy/Login';
 import Menu from './core/links/Menu';
-import Inventory from './core/Livestocks/Inventory';
 import NotFound from './core/NotFound';
+import { Row } from 'react-bootstrap'
 
 
 const Routes = () => {
     
     return(
         
-        <BrowserRouter>
+        <Router>
             <Heading />
-            <div className="section" dir="ltr">
-                <div className="row m-1 bg-white">
+
+           
+            
+            <Row className="m-0 p-0 bg-white" style={{ height: '85vh', width: '100vw' }}>
+                    <div className="m-0 p-0 bg-light" style={{height: '85vh', width:'12vw'}}>
                     <Menu />
-                    
-                   
+                    </div>
+                    <div className="m-0 p-0" style={{ height: '85vh', width: '88vw' }}>
                     <Switch>
                         <Route exact path='/' component={ Login } />
-                        <Route path='/Accounting' component={ Accounting } />
-                        <Route path='/Contacts' component={Contacts} />
-                        <Route path='/Equipment' component={ Equipment } />
-                        <Route path='/Farm_map' component={Farm_map} />
-                        <Route path='/Livestock' component={Livestock} />
-                        <Route path='/Crops' component={Crops} />
-                        <Route path='/Market' component={Market} />
-                        <Route path='/Reports' component={Reports} />
-                        <Route path='/Schedule' component={Schedule} />
-                        <Route path='/Tasks' component={Tasks} />
-                        <Route path='/Inventory' component={Inventory} />
-                        <Route path='/404' component={ NotFound } />
+                        <Route exact path='/Finance' component={ Finance } />
+                        <Route exact path='/Contacts' component={Contacts} />
+                        <Route exact path='/Equipment' component={Equipment} />
+                        <Route exact path='/Farm_map' component={Farm_map} />
+                        <Route exact path='/Livestock' component={Livestock} />
+                        <Route exact path='/Crops' component={Crops} />
+                        <Route exact path='/Market' component={Market} />
+                        <Route exact path='/Reports' component={Reports} />
+                        <Route exact path='/Schedule' component={Schedule} />
+                        <Route exact path='/Project' component={Project} />
+                        <Route exact path='/404' component={ NotFound } />
                         <Redirect to="/404" />
-                    </Switch>
-            </div>            
-        </div>
-
-            <footer className="pt-2 text-center">
-                <p>Copyright &copy; 2020</p>
+                    </Switch>  
+                    </div>
+                </Row>   
+  
+            <footer>
+                <p className="p-2 m-0 text-center">Copyright &copy; 2020</p>
             </footer>
-        </BrowserRouter>
+        </Router>
         
     )
     

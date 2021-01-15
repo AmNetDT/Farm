@@ -1,12 +1,18 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap'
 
 
-const Contacts = () => {
+export const Contacts = () => {
     return (
-        <h3>Hello Contacts</h3>
+        <Container>
+            <Row>
+                <Col className="mt-3">
+                </Col>
+            </Row>
+        </Container>
     )
 }
 
 
 
-export default Contacts;
+export default Contacts
