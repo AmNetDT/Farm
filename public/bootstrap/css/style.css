@@ -137,16 +137,6 @@ a.text-primary:hover, a.text-primary:focus {
   color: #135dff !important;
 }
 
-/*
- * 4. PAGINATION
- */
-.page-item:first-child .page-link {
-
-}
-
-.page-item:last-child .page-link {
-
-}
 
 .page-item.active .page-link {
   color: #fff;
@@ -1189,8 +1179,6 @@ code {
   margin-top: -1px;
 }
 
-.nav-pills .nav-link {
-}
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
