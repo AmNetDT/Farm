@@ -18,8 +18,7 @@ const isActive = (history, path) =>{
 
 const Menu = ({ history }) =>{
       return(
-            <div className="bg-light">
-                  <p className="text-primary text-uppercase px-4 py-2 headings-font-family">MENU</p>
+            <div className="bg-light mt-5 pt-4">
                         <ul className="sidebar-menu list-unstyled">
                               <li className="sidebar-list-item">
                                     <Link to="/Schedule" style={isActive(history, '/Schedule')} 

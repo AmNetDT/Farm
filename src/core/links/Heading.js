@@ -1,36 +1,45 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Nav, Navbar, NavDropdown, Col  } from 'react-bootstrap'
+import '../CSS/StyleSheet.css'
 
-
+const userSettings = <i className='icon-settings'>Account</i>;
+const userProfile = <i className='icon-user'></i>;
 
 
 const Heading = () => {
 
     return(
-      <header className="header sticky">
-        <nav className="navbar navbar-expand-lg bg-light" >
-          <Link to="#" className="sidebar-toggler mx-4 lead">
-            <i className="icon-align-justify text-primary"></i></Link>
-          <Link to="/" className="navbar-brand text-uppercase text-dark">KEALUCK ERM</Link>
-          <ul className="ml-auto d-flex align-items-center list-unstyled mb-0">
-
-            <li className="nav-item dropdown mr-1"><Link id="notifications" href="#"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{ borderRadius: '5px' }}
-              className="nav-link dropdown-toggle btn-primary border p-1">
-              <i className="icon-user-circle-o text-md"></i></Link>
-              
-              
-            </li>
-            <li className="nav-item dropdown ml-auto">
-              <Link id="userInfo" to="#" style={{ borderRadius:'5px' }}
-              className="nav-link btn-danger text-white border p-1">
-                <span className="icon-power-off"></span>
-              </Link>
-
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <React.Fragment>
+        <Navbar bg="white" expand="lg" className="shadow" fixed="top">
+          <Navbar.Brand href="/" className="text-lg">
+            <span className="icon-cloud"></span> KEALUCK ERM
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto">
+              <NavDropdown title={userSettings} id="basic-nav-dropdown">
+                <Col className="shadow border">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                </Col>
+              </NavDropdown>
+              <NavDropdown title={userProfile} id="basic-nav-dropdown">
+                <Col className="shadow border">
+                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                </Col>
+              </NavDropdown>
+              <Nav.Link href="#"><i className='icon-help'></i> Help</Nav.Link>
+            </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+        </React.Fragment>
     )
 }
 export default Heading;

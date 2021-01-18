@@ -2,7 +2,6 @@ import React from 'react';
 import Animals from './Livestocks/Animals';
 import Grazing from './Livestocks/Grazing';
 import Groups from './Livestocks/Groups';
-import Inventory from './Livestocks/Inventory';
 import { Row, Tab, Nav } from 'react-bootstrap';
 
 const livestocklink = [
@@ -20,12 +19,7 @@ const livestocklink = [
         name: 'Groups',
         id: 'Groups',
 
-    },
-    {
-        name: 'Inventory',
-        id: 'Inventory',
-
-    },
+    }
 ]
 
 const Livestock = () => {
@@ -63,10 +57,6 @@ const Livestock = () => {
                                 <Groups />
                             
                                 </Tab.Pane>
-                                    <Tab.Pane eventKey="Inventory">
-                                <Inventory />
-                                                   
-                            </Tab.Pane>
                         </Tab.Content>
                     </div>
                 </Row>
