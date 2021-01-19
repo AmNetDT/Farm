@@ -1,5 +1,5 @@
 import React from 'react';
-import './CSS/StyleSheet.css'
+import '../CSS/StyleSheet.css'
 import { Row, Col, Table, Container, Button, ButtonToolbar, InputGroup, FormControl, Form } from 'react-bootstrap';
 
 

@@ -2,8 +2,8 @@ import React from 'react'
 import { Nav, Navbar, NavDropdown, Col  } from 'react-bootstrap'
 import '../CSS/StyleSheet.css'
 
-const userSettings = <i className='icon-settings'>Account</i>;
-const userProfile = <i className='icon-user'></i>;
+const userSettings = <i className='icon-settings'> Account</i>;
+const userProfile = <i className='icon-user'> Profile</i>;
 
 
 const Heading = () => {
@@ -11,8 +11,8 @@ const Heading = () => {
     return(
       <React.Fragment>
         <Navbar bg="white" expand="lg" className="shadow" fixed="top">
-          <Navbar.Brand href="/" className="text-lg">
-            <span className="icon-cloud"></span> KEALUCK ERM
+          <div style={{ fontSize: '1.8em', color: 'blue', fontFamily: 'Lucida Sans' }}><span className="icon-cloud"> KEALUCK ERM</span> </div>
+          <Navbar.Brand href="/">
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

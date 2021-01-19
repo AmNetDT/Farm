@@ -52,41 +52,29 @@ const Menu = ({ history }) =>{
                               </Link>
                         </li>
                         <li className="sidebar-list-item">
-                              <Link to="/Inventory" style={isActive(history, '/Inventory')} className="sidebar-link text-muted">
+                              <Link to="/Resources" style={isActive(history, '/Resources')} className="sidebar-link text-muted">
                                     <span className="icon-toys text-primary"></span>
-                                    <span className="text-xs text-dark">&nbsp;Inventory</span>
+                                    <span className="text-xs text-dark">&nbsp;Resources</span>
                               </Link>
                         </li>
-                        <li className="sidebar-list-item">
-                              <Link to="/Procurements" style={isActive(history, '/Procurements')} className="sidebar-link text-muted">
-                                    <span className="icon-toys text-primary"></span>
-                                    <span className="text-xs text-dark">&nbsp;Procurements</span>
-                              </Link>
-                        </li>
-                              <li className="sidebar-list-item">
-                              <Link to="/Machinery" style={isActive(history, '/Machinery')} className="sidebar-link text-muted">
-                                          <span className="icon-toys text-primary"></span>
-                                          <span className="text-xs text-dark">&nbsp;Machinery</span>
-                                    </Link>
-                              </li>
                               <li className="sidebar-list-item">
                               <Link to="/Finance" style={isActive(history, '/Finance')} className="sidebar-link text-muted">
                                           <span className="icon-calculator text-primary"></span>
                                           <span className="text-xs text-dark">&nbsp;Finance</span>
                                     </Link>
-                              </li>
+                        </li>
                         <li className="sidebar-list-item">
-                              <Link to="/Equipment" style={isActive(history, '/Equipment')} className="sidebar-link text-muted">
+                              <Link to="/Sales" style={isActive(history, '/Sales')} className="sidebar-link text-muted">
+                                    <span className="icon-institution text-primary"></span>
+                                    <span className="text-xs text-dark">&nbsp;Sales</span>
+                              </Link>
+                        </li>
+                        <li className="sidebar-list-item">
+                              <Link to="/HRM" style={isActive(history, '/HRM')} className="sidebar-link text-muted">
                                     <span className="icon-toys text-primary"></span>
                                     <span className="text-xs text-dark">&nbsp;HRM</span>
                               </Link>
                         </li>
-                              <li className="sidebar-list-item">
-                                    <Link to="/Market" style={isActive(history, '/Market')} className="sidebar-link text-muted">
-                                          <span className="icon-institution text-primary"></span>
-                                          <span className="text-xs text-dark">&nbsp;Sales</span>
-                                    </Link>
-                              </li>
                         
                               <li className="sidebar-list-item">
                                     <Link to="/Farm_map" style={isActive(history, '/Farm_map')} className="sidebar-link text-muted">

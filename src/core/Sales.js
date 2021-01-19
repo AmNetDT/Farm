@@ -1,13 +1,13 @@
 import React from 'react'
-import Dashboard from './Market/Dashboard';
-import OnlineStore from './Market/OnlineStore';
-import Orders from './Market/Orders';
-import PickupLocations from './Market/PickupLocations';
-import Products from './Market/Products';
+import Dashboard from './Sales/Dashboard';
+import OnlineStore from './Sales/OnlineStore';
+import Orders from './Sales/Orders';
+import PickupLocations from './Sales/PickupLocations';
+import Products from './Sales/Products';
 import { Row, Tab, Nav } from 'react-bootstrap';
 
 
-const marketlink = [
+const saleslink = [
     {
         name: 'Dashboard',
         id: 'Dashboard'
@@ -34,7 +34,7 @@ const marketlink = [
     }
 ]
 
-const Market = () => {
+const Sales = () => {
 
     return (
         <Tab.Container id="market-links" defaultActiveKey="Dashboard" className="m-0 p-0">
@@ -43,7 +43,7 @@ const Market = () => {
                     style={{ backgroundColor: '#edebe9', height: '85vh', width: '12vw' }}>
 
                     <Nav variant="pills" className="flex-column m-0" >
-                        {marketlink.map(({ name, id }) => (
+                        {saleslink.map(({ name, id }) => (
                             <Nav.Item>
                                 <Nav.Link eventKey={id} key={id}>
                                     {name}
@@ -88,4 +88,4 @@ const Market = () => {
 
 
 
-export default Market
+export default Sales

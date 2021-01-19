@@ -2,14 +2,14 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Finance from './core/Finance';
 import Contacts from './core/Contacts';
-import Equipment from './core/Inventory';
+import Equipment from './core/Resources/Inventory';
 import Farm_map from './core/Farm_map';
 import Livestock from './core/Livestock';
 import Crops from './core/Crops';
-import Market from './core/Market';
+import Sales from './core/Sales';
 import Reports from './core/Reports';
 import Schedule from './core/Schedule';
-import Project from './core/Task';
+import Task from './core/Task';
 import Heading from './core/links/Heading';
 import Login from './privacy/Login';
 import Menu from './core/links/Menu';
@@ -40,10 +40,10 @@ const Routes = () => {
                         <Route exact path='/Farm_map' component={Farm_map} />
                         <Route exact path='/Livestock' component={Livestock} />
                         <Route exact path='/Crops' component={Crops} />
-                        <Route exact path='/Market' component={Market} />
+                        <Route exact path='/Sales' component={Sales} />
                         <Route exact path='/Reports' component={Reports} />
                         <Route exact path='/Schedule' component={Schedule} />
-                        <Route exact path='/Project' component={Project} />
+                        <Route exact path='/Task' component={Task} />
                         <Route exact path='/404' component={ NotFound } />
                         <Redirect to="/404" />
                     </Switch>  
